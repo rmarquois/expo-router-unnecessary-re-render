@@ -1,6 +1,7 @@
+import { memo } from 'react'
 import { View, Text } from 'react-native'
 
-export default function AnotherScreen() {
+export default memo(function AnotherScreen() {
   console.log('%cinit another screen', 'background: #222; color: #bada55')
 
   return (
@@ -8,4 +9,4 @@ export default function AnotherScreen() {
       <Text>Second Screen</Text>
     </View>
   )
-}
+})

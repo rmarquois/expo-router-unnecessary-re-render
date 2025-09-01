@@ -1,7 +1,8 @@
+import { memo } from 'react'
 import { View, Button } from 'react-native'
 import { router } from 'expo-router'
 
-export default function IndexScreen() {
+export default memo(function IndexScreen() {
   console.log('%cinit index screen', 'background: #222; color: #bada55')
 
   return (
@@ -12,4 +13,4 @@ export default function IndexScreen() {
       />
     </View>
   )
-}
+})
