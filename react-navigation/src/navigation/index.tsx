@@ -3,19 +3,22 @@ import {
   StaticParamList,
 } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { IndexScreen } from './screens/Index';
-import { AnotherScreen } from './screens/AnotherScreen';
+import { LoginScreen } from './screens/login';
+import FoldersStack from './folders';
 
 const RootStack = createNativeStackNavigator({
   screens: {
-    IndexScreen: {
-      screen: IndexScreen,
-      options: { title: 'React Navigation' }
+    login: {
+      screen: LoginScreen,
     },
-    AnotherScreen: {
-      screen: AnotherScreen,
+    folders: {
+      screen: FoldersStack,
     },
   },
+  screenOptions: {
+    headerShown: false,
+    presentation: 'transparentModal'
+  }
 });
 
 export const Navigation = createStaticNavigation(RootStack);

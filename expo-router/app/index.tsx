@@ -1,6 +1,5 @@
-import {HomeScreen} from "../src/screens/home";
+import { Redirect } from 'expo-router'
 
-export default function Page () {
-  console.log('%cinit index page', 'background: #0000ff; color: #fff')
-  return <HomeScreen />
+export default function Page() {
+  return <Redirect href="login" />
 }

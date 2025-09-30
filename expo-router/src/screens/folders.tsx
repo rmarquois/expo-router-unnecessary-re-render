@@ -1,14 +1,14 @@
 import { View, Button } from 'react-native'
 import { router } from 'expo-router'
 
-export function HomeScreen() {
-  console.log('%cinit home screen', 'background: #000; color: #fff')
+export function FoldersScreen() {
+  console.log('%cinit folders screen', 'background: #235789; color: #fff')
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Button
-        title="Go to next screen"
-        onPress={() => router.navigate('another')}
+        title="Folder details"
+        onPress={() => router.navigate('folders/2')}
       />
     </View>
   )

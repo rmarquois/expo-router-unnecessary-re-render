@@ -1,0 +1,10 @@
+import { Stack } from 'expo-router'
+
+export default function Layout() {
+  return (
+    <Stack screenOptions={{ headerShown: false, presentation: 'transparentModal' }}>
+        <Stack.Screen name="login" options={{ animation: 'none' }} />
+        <Stack.Screen name="folders" />
+    </Stack>
+  )
+}
